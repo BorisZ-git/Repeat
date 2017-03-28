@@ -17,7 +17,6 @@ namespace Repeat
     {
         static void Main(string[] args)
         {
-            Person db = new Person();
             
         }
     }
