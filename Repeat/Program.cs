@@ -43,18 +43,18 @@ namespace Repeat
         static void Main(string[] args)
         {
             #region ***Task 1***
-            //Person first = Anket.Interview();
-            //Anket.ToString(first);
-            //Console.WriteLine(Anket.IMT(first));
+            //Person first = Questionnaire.Interview();
+            //Questionnaire.ToString(first);
+            //Console.WriteLine(Questionnaire.IMT(first));
             #endregion ***Task 1***
             #region ***Task 2***
             //Distance p = new Distance();
             //Console.WriteLine($"{p.Count():f2}" );
             #endregion ***Task 2***
             #region ***Task 3***
-            Change variables = new Change();
-            variables.ActChange();
-            variables.ActChange("without C");
+            //Change variables = new Change();
+            //variables.ActChange();
+            //variables.ActChange("without C");
             #endregion ***Task 3***
 
         }
