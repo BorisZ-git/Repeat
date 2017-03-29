@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repeat
 {
-    class Anket
+    class Questionnaire
     {
         public static Person Interview()
         {
