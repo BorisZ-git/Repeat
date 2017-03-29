@@ -8,8 +8,8 @@ namespace Repeat
 {
     class Distance
     {
-        int x1,x2;
-        int y1,y2;
+        static int x1,x2;
+        static int y1,y2;
         public Distance()
         {
             x1 = Convert.ToInt32(Console.ReadLine());
@@ -17,6 +17,10 @@ namespace Repeat
             x2 = Convert.ToInt32(Console.ReadLine());
             y2 = Convert.ToInt32(Console.ReadLine());
         }
-
+        public static double Count()
+        {
+            double r = Math.Sqrt(Math.Pow(x2 * x1, 2) + Math.Pow(y2 * y1, 2));
+            return r;
+        }
     }
 }
