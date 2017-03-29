@@ -19,12 +19,15 @@ namespace Repeat
             c = a;
             a = b;
             b = c;
+            Console.WriteLine($"a = {a}; b = {b}");
         }
         public void ActChange(string str)
         {
             a = a + b;
             b = a - b;
             a = a - b;
+            Console.WriteLine($"a = {a}; b = {b}");
+
         }
     }
 }

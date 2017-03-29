@@ -51,7 +51,11 @@ namespace Repeat
             //Distance p = new Distance();
             //Console.WriteLine($"{p.Count():f2}" );
             #endregion ***Task 2***
-
+            #region ***Task 3***
+            Change variables = new Change();
+            variables.ActChange();
+            variables.ActChange("without C");
+            #endregion ***Task 3***
 
         }
     }
