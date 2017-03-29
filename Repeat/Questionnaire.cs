@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Repeat
 {
+    /// <summary>
+    /// класс с методами опросника
+    /// </summary>
     class Questionnaire
     {
+        /// <summary>
+        /// основной опросник
+        /// </summary>
+        /// <returns>экземпляр класс с вбитыми данными</returns>
         public static Person Interview()
         {
             Person copy = new Person();
@@ -18,6 +25,10 @@ namespace Repeat
             copy.Weight = Console.ReadLine();
             return copy;
         }
+        /// <summary>
+        /// укороченный опросник
+        /// </summary>
+        /// <returns>экземпляр класс с вбитыми данными</returns>
         public static Person ShortInterview()
         {
             Person copy = new Person();
@@ -26,10 +37,20 @@ namespace Repeat
             copy.City = Console.ReadLine();
             return copy;
         }
+        /// <summary>
+        /// выводит данные на экран
+        /// </summary>
+        /// <param name="copy">принимает копию с вбитыми данными</param>
         public static void ToString(Person copy)
         {
             Console.WriteLine($"{copy.FName} {copy.LName} {copy.Age} {copy.Hight} {copy.Weight}");
         }
+        /// <summary>
+        /// выводит данные по центру экрана
+        /// </summary>
+        /// <param name="copy">принимает копию с вбитыми данными</param>
+        /// <param name="x">пустышка для перегрузки метода</param>
+        /// <param name="y">пустышка для перегрузки метода</param>
         public static void ToString(Person copy, int x,int y)
         {
             string str = $"{copy.FName} {copy.LName} {copy.City}";
@@ -38,7 +59,11 @@ namespace Repeat
             Console.SetCursorPosition(x, y);
             Console.WriteLine(str);
         }
-
+        /// <summary>
+        /// считает ИМТ на основании передаваемых данных
+        /// </summary>
+        /// <param name="copy">принимает копию с вбитыми данными</param>
+        /// <returns>итоговое ИМТ</returns>
         public static double IMT(Person copy)
         {
             double i;
@@ -47,6 +72,9 @@ namespace Repeat
             return i = m / (h * h);
         }
     }
+    /// <summary>
+    /// содержит данные о респонденте
+    /// </summary>
     class Person
     {
         public string FName { get; set; }
