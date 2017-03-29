@@ -23,7 +23,7 @@ namespace Repeat
             foreach (var e in Args) db.Add(e);
         }
         public List<Person> resp { get { return db; } }
-        static void FullData()
+        public static void FullData()
         {
             Respondents data = new Respondents(
         new Person() { Name = "Name1", LastName = "LName1", Age = "20", Hight = 180, Weight = 80 },
