@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anket.cs" />
+    <Compile Include="Questionnaire.cs" />
     <Compile Include="Change.cs" />
     <Compile Include="Distance.cs" />
     <Compile Include="Program.cs" />

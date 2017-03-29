@@ -30,6 +30,15 @@ namespace Repeat
         {
             Console.WriteLine($"{copy.FName} {copy.LName} {copy.Age} {copy.Hight} {copy.Weight}");
         }
+        public static void ToString(Person copy, int x,int y)
+        {
+            string str = $"{copy.FName} {copy.LName} {copy.City}";
+            x = Console.BufferWidth / 2 - str.Length;
+            y = Console.BufferHeight / 2;
+            Console.SetCursorPosition(x, y);
+            Console.WriteLine(str);
+        }
+
         public static double IMT(Person copy)
         {
             double i;

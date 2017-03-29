@@ -56,6 +56,12 @@ namespace Repeat
             //variables.ActChange();
             //variables.ActChange("without C");
             #endregion ***Task 3***
+            #region ***Task 4***
+            //Console.BufferHeight=30;
+            //Console.BufferWidth = 120;
+            //Person second = Questionnaire.ShortInterview();
+            //Questionnaire.ToString(second,0,0);
+            #endregion ***Task 4***
 
         }
     }
