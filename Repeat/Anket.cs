@@ -22,6 +22,13 @@ namespace Repeat
         {
             Console.WriteLine($"{copy.FName} {copy.LName} {copy.Age} {copy.Hight} {copy.Weight}");
         }
+        public static double IMT(Person copy)
+        {
+            double i;
+            double m = Convert.ToDouble(copy.Weight);
+            double h = (Convert.ToDouble(copy.Hight))/100;
+            return i = m / (h * h);
+        }
     }
     class Person
     {

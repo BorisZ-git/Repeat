@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 //а)используя склеивание;
 //б) используя форматированный вывод.
 //1. Ввести вес и рост человека.Расчитать и вывести индекс массы тела(ИМТ)по формуле
-// I=m/(h* h); где m­ масса тела вкилограммах, h ­ рост в метрах
+// I=m/(h* h); где m­ масса тела в килограммах, h ­ рост в метрах
 #endregion ***Task 1***
 #region ***Task 2***
 //3. а) Написать программу, котораяподсчитывает расстояниемежду точкамис координатамиx1, y1
@@ -42,7 +42,9 @@ namespace Repeat
     {
         static void Main(string[] args)
         {
-            Anket.ToString(Anket.Interview());
+            Person first = Anket.Interview();
+            Anket.ToString(first);
+            Console.WriteLine(Anket.IMT(first));
         }
     }
 }
