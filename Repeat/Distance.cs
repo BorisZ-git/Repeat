@@ -17,7 +17,7 @@ namespace Repeat
             x2 = Convert.ToInt32(Console.ReadLine());
             y2 = Convert.ToInt32(Console.ReadLine());
         }
-        public static double Count()
+        public double Count()
         {
             double r = Math.Sqrt(Math.Pow(x2 * x1, 2) + Math.Pow(y2 * y1, 2));
             return r;

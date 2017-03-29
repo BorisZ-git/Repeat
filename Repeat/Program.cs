@@ -47,6 +47,10 @@ namespace Repeat
             //Anket.ToString(first);
             //Console.WriteLine(Anket.IMT(first));
             #endregion ***Task 1***
+            #region ***Task 2***
+            //Distance p = new Distance();
+            //Console.WriteLine($"{p.Count():f2}" );
+            #endregion ***Task 2***
 
 
         }
