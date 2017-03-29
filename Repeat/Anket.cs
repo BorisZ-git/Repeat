@@ -18,6 +18,14 @@ namespace Repeat
             copy.Weight = Console.ReadLine();
             return copy;
         }
+        public static Person ShortInterview()
+        {
+            Person copy = new Person();
+            copy.FName = Console.ReadLine();
+            copy.LName = Console.ReadLine();
+            copy.City = Console.ReadLine();
+            return copy;
+        }
         public static void ToString(Person copy)
         {
             Console.WriteLine($"{copy.FName} {copy.LName} {copy.Age} {copy.Hight} {copy.Weight}");
