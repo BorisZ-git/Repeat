@@ -13,10 +13,10 @@ using System.Threading.Tasks;
 // I=m/(h* h); где m­ масса тела в килограммах, h ­ рост в метрах
 #endregion ***Task 1***
 #region ***Task 2***
-//3. а) Написать программу, котораяподсчитывает расстояниемежду точкамис координатамиx1, y1
-//и x2,y2 поформуле r = Math.Sqrt(Math.Pow(x2­x1, 2) + Math.Pow(y2­y1, 2).Вывестирезультат
-//используяспецификаторформата.2f(сдвумязнакамипослезапятой);
-//б) * Выполнитепредыдущее заданиеоформив вычислениярасстояния междуточками ввиде
+//3. а) Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1
+//и x2,y2 по формуле r = Math.Sqrt(Math.Pow(x2­x1, 2) + Math.Pow(y2­y1, 2).Вывести результат
+//используя спецификатор формата .2f(с двумя знаками после запятой);
+//б) * Выполните предыдущее задание оформив вычисления расстояния междуточками в виде
 //    метода;
 
 #endregion ***Task 2*** 
@@ -42,9 +42,13 @@ namespace Repeat
     {
         static void Main(string[] args)
         {
-            Person first = Anket.Interview();
-            Anket.ToString(first);
-            Console.WriteLine(Anket.IMT(first));
+            #region ***Task 1***
+            //Person first = Anket.Interview();
+            //Anket.ToString(first);
+            //Console.WriteLine(Anket.IMT(first));
+            #endregion ***Task 1***
+
+
         }
     }
 }
