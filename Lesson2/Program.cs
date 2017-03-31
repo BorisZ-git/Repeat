@@ -76,6 +76,10 @@ namespace Lesson2
 
             #endregion *** Task 3***
             #region *** Task 4***
+
+            Personal user = new Personal("log", "pass");
+            user.Identification();
+
             #endregion *** Task 4***
             #region *** Task 5***
             #endregion *** Task 5***
