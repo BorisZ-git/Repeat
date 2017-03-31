@@ -14,5 +14,11 @@ namespace Lesson2
             this.login = login;
             this.password = password;
         }
+        public bool Identification(string login, string password)
+        {
+            if (this.login == login) return true;
+            else if (this.password == password) return true;
+            else return false;
+        }
     }
 }
