@@ -57,8 +57,8 @@ namespace Lesson2
             */
 
             #region *** Task 1***
-            //Count copy = new Count();
-            //Console.WriteLine(copy.Min(100, 120, 13));
+            Count copy = new Count();
+            Console.WriteLine(copy.Min(100, 120, 13));
             #endregion *** Task 1***
             #region *** Task 2***
             #endregion *** Task 2***
