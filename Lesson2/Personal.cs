@@ -9,6 +9,12 @@ namespace Lesson2
     class Personal
     {
         string login, password;
+        double weight, growth;
+        public Personal(int m,int h)
+        {
+            weight = m;
+            growth = h/100;
+        }
         public Personal(string login,string password)
         {
             this.login = login;
