@@ -60,5 +60,10 @@ namespace Lesson2
             if (a > 0 && a % 2 != 0) return true;
             else return false;
         }
+        public double IMT(int m, int h)
+        {                       
+            return  m / (h * h);
+        }
+
     }
 }
