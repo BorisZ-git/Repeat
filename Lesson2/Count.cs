@@ -28,8 +28,7 @@ namespace Lesson2
         {
             if (a == 0) return 0;
             else return Long(a / 10)+1;
-        }
-        //use continue
+        }        
         public int Sum()
         {
             int a;  int sum = 0;
@@ -39,6 +38,22 @@ namespace Lesson2
                 if (Check(a)) sum += a;
             } while (a != 0);             
             return sum;
+        }
+        public int Sum(string use_continue)
+        {
+            int a; int sum = 0;
+            do
+            {
+                int.TryParse(Console.ReadLine(), out a);
+                if (a != 0)
+                {
+                    if (Check(a)) sum += a;
+                    continue;
+                }
+                break;
+            } while (true);
+            return sum;            
+
         }
         public bool Check(int a)
         {

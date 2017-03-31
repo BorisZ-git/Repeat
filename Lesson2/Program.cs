@@ -72,6 +72,8 @@ namespace Lesson2
 
             Count copy = new Count();
             Console.WriteLine(copy.Sum());
+            Console.WriteLine(copy.Sum("Use Continue"));
+
             #endregion *** Task 3***
             #region *** Task 4***
             #endregion *** Task 4***
