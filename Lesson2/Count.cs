@@ -29,5 +29,21 @@ namespace Lesson2
             if (a == 0) return 0;
             else return Long(a / 10)+1;
         }
+        //use continue
+        public int Sum()
+        {
+            int a;  int sum = 0;
+            do
+            {
+                 int.TryParse(Console.ReadLine(), out a);
+                if (Check(a)) sum += a;
+            } while (a != 0);             
+            return sum;
+        }
+        public bool Check(int a)
+        {
+            if (a > 0 && a % 2 != 0) return true;
+            else return false;
+        }
     }
 }

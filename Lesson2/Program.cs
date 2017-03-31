@@ -57,16 +57,21 @@ namespace Lesson2
             */
 
             #region *** Task 1***
+
             //Count copy = new Count();
             //Console.WriteLine(copy.Min(100, 120, 13));
+
             #endregion *** Task 1***
             #region *** Task 2***
-                   
-            Console.WriteLine(Count.Long(12345));
-            Console.WriteLine(Count.Long(123,"Recursia"));
+
+            //Console.WriteLine(Count.Long(12345));
+            //Console.WriteLine(Count.Long(123,"Recursia"));
 
             #endregion *** Task 2***
             #region *** Task 3***
+
+            Count copy = new Count();
+            Console.WriteLine(copy.Sum());
             #endregion *** Task 3***
             #region *** Task 4***
             #endregion *** Task 4***
