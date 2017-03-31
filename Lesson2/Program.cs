@@ -70,9 +70,9 @@ namespace Lesson2
             #endregion *** Task 2***
             #region *** Task 3***
 
-            Count copy = new Count();
-            Console.WriteLine(copy.Sum());
-            Console.WriteLine(copy.Sum("Use Continue"));
+            //Count copy = new Count();
+            //Console.WriteLine(copy.Sum());
+            //Console.WriteLine(copy.Sum("Use Continue"));
 
             #endregion *** Task 3***
             #region *** Task 4***
