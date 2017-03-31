@@ -8,5 +8,11 @@ namespace Lesson2
 {
     class Count
     {
+        public int Min(int a, int b, int c)
+        {           
+            return a < b ?
+                a < c ? a : c 
+                : b < c ? b : c;
+        }
     }
 }
