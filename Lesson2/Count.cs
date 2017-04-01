@@ -11,34 +11,34 @@ namespace Lesson2
         //Math
         DateTime start = new DateTime();
         public int Min(int a, int b, int c)
-        {           
+        {
             return a < b ?
-                a < c ? a : c 
+                a < c ? a : c
                 : b < c ? b : c;
         }
         public static int Long(int a)
         {
             int count = 0;
-            while(a!=0)
+            while (a != 0)
             {
                 a /= 10;
                 count++;
             }
-            return count;            
+            return count;
         }
-        public static int Long(int a,string Recursia)
+        public static int Long(int a, string Recursia)
         {
             if (a == 0) return 0;
-            else return Long(a / 10)+1;
-        }        
+            else return Long(a / 10) + 1;
+        }
         public int Sum()
         {
-            int a;  int sum = 0;
+            int a; int sum = 0;
             do
             {
-                 int.TryParse(Console.ReadLine(), out a);
+                int.TryParse(Console.ReadLine(), out a);
                 if (Check(a)) sum += a;
-            } while (a != 0);             
+            } while (a != 0);
             return sum;
         }
         public int Sum(string use_continue)
@@ -54,7 +54,7 @@ namespace Lesson2
                 }
                 break;
             } while (true);
-            return sum;            
+            return sum;
 
         }
         public int SumOfLong(int i)
@@ -76,7 +76,7 @@ namespace Lesson2
         {
             int count = 0;
             start = DateTime.Now;
-            for (int i = 1; i < max; i++) 
+            for (int i = 1; i < max; i++)
             {
                 if (i % SumOfLong(i) == 0)
                 {
@@ -89,6 +89,21 @@ namespace Lesson2
         {
             DateTime end = DateTime.Now;
             return start - end;
+        }
+        public void FromTo(int a,int b)
+        {
+            if (a != b)
+                if (a > b)
+                {
+                    Console.Write($"{b} ");
+                    FromTo(a, b + 1);
+                }
+                else 
+                {
+                    Console.Write($"{a} ");
+                    FromTo(a + 1, b);
+                }
+            else if (a == b) Console.WriteLine($"{a} ");
         }
     }
 
