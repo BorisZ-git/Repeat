@@ -91,6 +91,7 @@ namespace Lesson2
 
             Count copy = new Count();
             Console.WriteLine(copy.GoodNumber(1000000));
+            Console.WriteLine(copy.Timer());
 
             #endregion *** Task 6***
             #region *** Task 7***

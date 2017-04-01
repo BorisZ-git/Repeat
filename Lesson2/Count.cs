@@ -9,7 +9,7 @@ namespace Lesson2
     class Count
     {
         //Math
-
+        DateTime start = new DateTime();
         public int Min(int a, int b, int c)
         {           
             return a < b ?
@@ -75,6 +75,7 @@ namespace Lesson2
         public int GoodNumber(int max)
         {
             int count = 0;
+            start = DateTime.Now;
             for (int i = 1; i < max; i++) 
             {
                 if (i % SumOfLong(i) == 0)
@@ -84,8 +85,11 @@ namespace Lesson2
             }
             return count;
         }
-
-
+        public TimeSpan Timer()
+        {
+            DateTime end = DateTime.Now;
+            return start - end;
+        }
     }
 
 }
