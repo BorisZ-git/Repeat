@@ -88,6 +88,10 @@ namespace Lesson2
 
             #endregion *** Task 5***
             #region *** Task 6***
+
+            Count copy = new Count();
+            Console.WriteLine(copy.GoodNumber(1000000));
+
             #endregion *** Task 6***
             #region *** Task 7***
             #endregion *** Task 7***

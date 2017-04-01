@@ -75,7 +75,7 @@ namespace Lesson2
         public int GoodNumber(int max)
         {
             int count = 0;
-            for (int i = 0; i < max; i++) 
+            for (int i = 1; i < max; i++) 
             {
                 if (i % SumOfLong(i) == 0)
                 {
