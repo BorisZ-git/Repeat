@@ -9,8 +9,8 @@ namespace Lesson2
     class Personal
     {
         string login, password;
-        double weight, growth;
-        public Personal(int m,int h)
+        public static double weight, growth;
+        public Personal(double m,double h)
         {
             weight = m;
             growth = h/100;
@@ -56,5 +56,52 @@ namespace Lesson2
             else if (this.password == str) return true;
             else return false;
         }
+
+        //IMT
+        public double IMT()
+        {
+            return weight / (growth * growth);
+        }
+        public string IMT_Interpret()
+        {
+            double i = IMT();
+            string str = null;
+            if (i < 16) str = "Выраженный дефицит массы тела";
+            if (i > 16 && i < 18.5) str = "Недостаточная (дефицит) масса тела";
+            if (i >= 18.5 && i < 25)  str = "Норма";
+            if (i >= 25 && i < 30) str = "Избыточная масса тела (предожирение)";
+            if (i > 30 && i < 35) str = "Ожирение первой степени";
+            if (i > 35 && i < 40) str = "Ожирение второй степени";
+            if (i > 40) str = "Ожирение третьей степени (морбидное)";
+            return str;
+        }
+        public string IMT_Weight()
+        {
+            double i = IMT();
+            int count = 0;
+            string str = "Все в норме";
+            if (i < 18.5)
+            {
+                while (i < 18.5)
+                {
+                    weight++;
+                    i = IMT();
+                    count++;
+                }
+                str = $"Вам нужно набрать {count} кг, для нормализации IMT";
+            }
+            else if (i > 25)
+            {
+                while (i > 25)
+                {
+                    weight--;
+                    i = IMT();
+                    count++;
+                }
+                str = $"Вам нужно сбросить {count} кг, для нормализации IMT";
+            }
+            return str;
+        }
     }
+
 }

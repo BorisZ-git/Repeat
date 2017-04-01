@@ -83,7 +83,8 @@ namespace Lesson2
             #endregion *** Task 4***
             #region *** Task 5***
 
-
+            Personal user2 = new Personal(69, 192);
+            Console.WriteLine(user2.IMT_Weight());
 
             #endregion *** Task 5***
             #region *** Task 6***
