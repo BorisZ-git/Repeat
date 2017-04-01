@@ -57,10 +57,26 @@ namespace Lesson2
             return sum;            
 
         }
+        public int SumOfNumber(int i)
+        {
+
+        }
         public bool Check(int a)
         {
             if (a > 0 && a % 2 != 0) return true;
             else return false;
+        }
+        public int GoodNumber(int max)
+        {
+            int count = 0;
+            for (int i = 0; i < max; i++) 
+            {
+                if (i % SumOfNumber(i) == 0)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
 
 
