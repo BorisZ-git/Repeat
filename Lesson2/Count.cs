@@ -57,9 +57,15 @@ namespace Lesson2
             return sum;            
 
         }
-        public int SumOfNumber(int i)
+        public int SumOfLong(int i)
         {
-
+            int count = 0;
+            while (i != 0)
+            {
+                count += i % 10;
+                i /= 10;
+            }
+            return count;
         }
         public bool Check(int a)
         {
@@ -71,7 +77,7 @@ namespace Lesson2
             int count = 0;
             for (int i = 0; i < max; i++) 
             {
-                if (i % SumOfNumber(i) == 0)
+                if (i % SumOfLong(i) == 0)
                 {
                     count++;
                 }
