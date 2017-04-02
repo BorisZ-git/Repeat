@@ -98,6 +98,7 @@ namespace Lesson2
 
             Count copy = new Count();
             copy.FromTo(1, 10);
+            Console.WriteLine(copy.SumFromTo(1, 5));
 
             #endregion *** Task 7***
         }

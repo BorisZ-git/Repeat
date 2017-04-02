@@ -105,6 +105,11 @@ namespace Lesson2
                 }
             else if (a == b) Console.WriteLine($"{a} ");
         }
+        public int SumFromTo (int a, int b)
+        {
+            if (a == b) return 0;
+            else return a < b ? SumFromTo(a + 1, b) + a : SumFromTo(a, b + 1) + b;
+        }
     }
 
 }
