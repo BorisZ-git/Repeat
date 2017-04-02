@@ -48,14 +48,6 @@ namespace Lesson2
 
         static void Main(string[] args)
         {
-            /*
-             * Тернарная операция
-             * Перечисления
-             * Оператор выбора
-             * continue
-             * рекурсия =>
-            */
-
             #region *** Task 1***
 
             //Count copy = new Count();

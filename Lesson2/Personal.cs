@@ -10,16 +10,29 @@ namespace Lesson2
     {
         string login, password;
         public static double weight, growth;
+        /// <summary>
+        /// Конструктор для роста и массы
+        /// </summary>
+        /// <param name="m">масса</param>
+        /// <param name="h">рост</param>
         public Personal(double m,double h)
         {
             weight = m;
             growth = h/100;
         }
+        /// <summary>
+        /// Конструктор для логина и пароля
+        /// </summary>
+        /// <param name="login">логин</param>
+        /// <param name="password">пароль</param>
         public Personal(string login,string password)
         {
             this.login = login;
             this.password = password;
         }
+        /// <summary>
+        /// Программа входа
+        /// </summary>
         public void Identification()
         {
             int count = 3;
@@ -50,6 +63,11 @@ namespace Lesson2
             if (count == 0) Console.WriteLine($"count = {count}");
             Console.WriteLine("You Pass!");
         }
+        /// <summary>
+        /// Проверка логина или пароля
+        /// </summary>
+        /// <param name="str">введенные данные</param>
+        /// <returns>правда или нет</returns>
         public bool Check(string str)
         {
             if (this.login == str) return true;
@@ -58,10 +76,18 @@ namespace Lesson2
         }
 
         //IMT
+        /// <summary>
+        /// рассчет имт
+        /// </summary>
+        /// <returns>ИМТ</returns>
         public double IMT()
         {
             return weight / (growth * growth);
         }
+        /// <summary>
+        /// Интерпретация ИМТ
+        /// </summary>
+        /// <returns>текущий ИМТ</returns>
         public string IMT_Interpret()
         {
             double i = IMT();
@@ -75,6 +101,10 @@ namespace Lesson2
             if (i > 40) str = "Ожирение третьей степени (морбидное)";
             return str;
         }
+        /// <summary>
+        /// ИМТ до нормы
+        /// </summary>
+        /// <returns>сколько нужно</returns>
         public string IMT_Weight()
         {
             double i = IMT();
